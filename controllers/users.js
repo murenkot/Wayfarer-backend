@@ -28,7 +28,6 @@ const deleteAllUsers = (req, res) => {
 
 // GET show one user
 const show = (req, res) => {
-    console.log(req.session);
     if(!req.session.currentUser) return res.status(401).json({
         status: 401,
         message: 'Please log in and try again'
@@ -59,7 +58,6 @@ const update = (req, res) => {
 
     db.User.findById(req.session.currentUser.id, (err, foundUser)=>{
         if (err) {console.log(err); return};
-        console.log(req.body);
         if (req.body.username) {
             foundUser.username = req.body.username;
         };
@@ -75,7 +73,6 @@ const update = (req, res) => {
 
         foundUser.save((err, updatedUser)=> {
             if (err) console.log(err);
-            console.log(updatedUser)
         });
 
         res.json({

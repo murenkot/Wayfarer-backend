@@ -50,7 +50,6 @@ const addPost = (req, res) => {
     const postData = {...req.body, author: req.session.currentUser.id};
     db.Post.create(postData, (error, createdPost)=>{
         if (error) return console.log(error);
-        console.log('Successfully created post');
         db.User.findById(createdPost.author, (err, foundUser) => {
             if (err) return console.log(err);
             foundUser.posts.push(createdPost._id);
@@ -62,16 +61,10 @@ const addPost = (req, res) => {
                 });
             });
         });
-        // res.json({
-        //     status: 201,
-        //     data: createdPost,
-        // });
     });
 };
 
 const findPosts = (req, res) => {
-    console.log(req.query);
-
     db.City.find(req.query, (error, foundCity)=> {
         if (error) return console.log(error);
         city_id = foundCity[0]._id;
@@ -87,10 +80,8 @@ const findPosts = (req, res) => {
 
 // Update one post
 const updatePost = (req, res) => {
-    console.log('beep');
     db.Post.findById(req.params.id, (err, foundPost) => {
         if (err) return console.log(err);
-        console.log(req.body);
         if (req.body.city) {
             foundPost.city = req.body.city;
         };
@@ -106,7 +97,6 @@ const updatePost = (req, res) => {
 
         foundPost.save((err, updatedPost)=> {
             if (err) console.log(err);
-            console.log(updatedPost)
         });
 
         res.json({

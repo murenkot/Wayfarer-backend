@@ -4,18 +4,20 @@ const Schema = mongoose.Schema;
 const PostSchema = mongoose.Schema({
   city: {
     type: Schema.Types.ObjectId,
-    ref: 'City'
+    ref: 'City',
+    required: [true, 'city is required']
 },
   title: {
     type: String,
-    // required: function() { return this.title.length < 201 && this.title.length > 0; },
+    required: [true, 'title is required']
   },
   photo: {
     type: String,
+    required: [true, 'photo is required']
   },
   author: {
     type: Schema.Types.ObjectId,
-    ref: 'User'
+    ref: 'User',
   },
   content: {
     type: String,

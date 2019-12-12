@@ -4,8 +4,6 @@ const ctrl = require('../controllers')
 
 //PATH = /api/v1/posts
 
-// FOR TESTING: nuke all posts
-router.delete('/all', ctrl.posts.deleteAllPosts);
 
 //GET All Posts
 router.get('/all', ctrl.posts.showAll);

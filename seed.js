@@ -8,7 +8,7 @@ const cityList = [
   },
   {
     name: "Sydney",
-    photo: "https://lp-cms-production.imgix.net/2019-06/65830387.jpg?fit=crop&q=40&sharp=10&vib=20&auto=format&ixlib=react-8.6.4",
+    photo: "https://assets.vancouverisawesome.com/wp-content/uploads/2019/09/25093747/sydney-opera-house.jpg",
     country: "Australia"
   },
   {
@@ -23,32 +23,32 @@ const cityList = [
   },
   {
     name: "Berlin",
-    photo: "https://www.citizenm.com/cache/images/seattle_city_image_1200x675-1_004b02a34b02a3.jpg",
+    photo: "https://www.ef.co.nz/sitecore/__/~/media/universal/stage/5x2/destinations/de/berlin.jpg",
     country: "Germany"
   },
   {
     name: "Florence",
-    photo: "https://www.citizenm.com/cache/images/seattle_city_image_1200x675-1_004b02a34b02a3.jpg",
+    photo: "https://plushostels.com/files/firenze/florence_cover_min.jpg",
     country: "Italy"
   },
   {
     name: "Vienna",
-    photo: "https://www.citizenm.com/cache/images/seattle_city_image_1200x675-1_004b02a34b02a3.jpg",
+    photo: "https://skyticket.com/guide/wp-content/uploads/2017/12/shutterstock_719357683.jpg",
     country: "Austria"
   },
   {
     name: "Hong Kong",
-    photo: "https://www.citizenm.com/cache/images/seattle_city_image_1200x675-1_004b02a34b02a3.jpg",
+    photo: "https://www.telegraph.co.uk/content/dam/Travel/Destinations/Asia/Hong%20Kong/hong-kong-victoria-peak-pano-guide.jpg?imwidth=450",
     country: "Hong Kong"
   },
   {
     name: "Bangkok",
-    photo: "https://www.citizenm.com/cache/images/seattle_city_image_1200x675-1_004b02a34b02a3.jpg",
+    photo: "https://www.fodors.com/wp-content/uploads/2019/04/HERO_BangkokTips_Hero_shutterstock_367503629.jpg",
     country: "Thailand"
   },
   {
     name: "Winnipeg",
-    photo: "https://www.citizenm.com/cache/images/seattle_city_image_1200x675-1_004b02a34b02a3.jpg",
+    photo: "https://www.macleans.ca/wp-content/uploads/2017/04/12.-Winnipeg_Manitoba.jpg",
     country: "Canada"
   }
 ];

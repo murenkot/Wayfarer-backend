@@ -7,9 +7,6 @@ const ctrl = require('../controllers')
 // GET all users
 router.get('/all', ctrl.users.showAllUsers);
 
-// DELETE all users
-router.delete('/all', ctrl.users.deleteAllUsers);
-
 //GET Profile by ID
 router.get('/findById/:id', ctrl.users.show);
 
